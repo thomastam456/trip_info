@@ -1,0 +1,114 @@
+/* Carousel */
+.carousel,
+.carousel-inner,
+.carousel-item {
+   height: 400px;
+}
+
+.carousel-inner {
+   background-color: #3a3a3a;
+}
+
+.carousel-item .carousel-caption {
+   text-align: left;
+   padding-bottom: 5rem;
+   bottom: 60px;
+   padding: 60px 0;
+   display: block !important;
+}
+
+.carousel-item .carousel-caption button,
+.carousel-item .carousel-caption button.btn-primary:focus,
+.carousel-item .carousel-caption button.btn-primary:not(:disabled):not(.disabled):active,
+.carousel-item .carousel-caption button.btn-primary:not(:disabled):not(.disabled):active:focus {
+   box-shadow: 1px 1px 3px #8f8e8e;
+}
+
+.carousel-caption h2 {
+   margin-bottom: 30px;
+   text-shadow: 2px 2px 3px #595959;
+}
+
+
+/* Attractions Brief Description */
+.attractions_briefTitle {
+   color: #40C0E4;
+   font-size: 2rem;
+   font-weight: bold;
+}
+
+.attractions_briefTitle .material-icons {
+   border: solid 1px;
+   border-radius: 50%;
+   margin-right: .5rem;
+   padding: 5px;
+   color: #FFF;
+   background-color: #40C0E4;
+}
+
+.attractions_briefArea {
+   max-width: 80%;
+   margin: 0 auto;
+}
+
+.attractions_brief {
+   box-shadow: 1px 2px 3px #E1E1E1;
+   border-radius: 10px;
+   overflow: hidden;
+   margin: 0 auto;
+   text-decoration: none !important;
+   color: initial !important;
+}
+
+.attractions_brief .imgWrapper {
+   overflow: hidden;
+}
+
+.attractions_brief img {
+   width: 100%;
+   transition: .3s all ease;
+}
+
+.attractions_brief img:hover {
+   transform: scale(1.3);
+}
+
+.attractions_brief .card-title {
+   font-weight: bold;
+}
+
+.attractions_brief .card-text {
+   display: inline-block;
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+
+.attractions_brief .card-text:last-of-type {
+   display: flex;
+   align-items: center;
+   transition: .3s all ease;
+}
+
+.attractions_brief:hover .card-text:last-of-type {
+   color: #39accd;
+}
+
+.attractions_brief .card-text .material-icons {
+   margin-left: .5rem;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+   .attractions_briefArea {
+      max-width: none;
+   }
+}
+
+@media only screen and (max-width: 375px) {
+   .carousel-caption h2 {
+      font-size: 1.7rem;
+   }
+}

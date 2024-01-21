@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Trip Info 旅遊資訊網 | 芬蘭</title>
+
+   <!-- Favicon -->
+   <link rel="icon" type="image/png" href="./img/site_logo_favicon_48.png" sizes="48x48">
+
+   <!-- Inject Bootstrap CSS + Google Material Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   <!-- Stylesheets -->
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/attractions.css">
+</head>
+
+<body>
+   <!-- Header -->
+   <app-header></app-header>
+
+   <!-- Banner -->
+   <div class="attrBannerArea darkBgTransparent" style="background: url('./img/banner_rovaniemi.jpg') center no-repeat #3a3a3a;">
+      <h2>芬蘭 - 羅凡尼米</h2>
+   </div>
+
+   <!-- Main Content -->
+   <div class="mainContainer container py-4">
+
+      <!-- Categories Filter -->
+      <div class="cateFilterArea mb-3">
+         <button type="button" id="cateFilterHistoryCult" class="btn btn-primary primaryColor dark">
+            <span class="material-icons">auto_stories</span>歷史及文化</button>
+         <button type="button" id="cateFilterAttr" class="btn btn-primary primaryColor dark white"><span class="material-icons">place</span>景點</button>
+         <button type="button" id="cateFilterInfo" class="btn btn-primary primaryColor dark white"><span class="material-icons">info</span>實用資料</button>
+      </div>
+
+      <!-- Attractions Info -->
+      <div class="attrInfoArea">
+
+         <!-- History & Culture -->
+         <div class="attrInfoInner cateFilterHistoryCult p-3">
+            <div class="row pb-4">
+               <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img src="./img/banner_rovaniemi.jpg" class="d-block w-100" alt="banner_rovaniemi">
+                        <div class="carousel-caption d-md-block">
+                           <h5>聖誕老人村</h5>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img src="./img/banner_rovaniemi_sibling_1.jpg" class="d-block w-100" alt="banner_rovaniemi_sibling_1">
+                        <div class="carousel-caption d-md-block">
+                           <h5>北極光</h5>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img src="./img/banner_rovaniemi_sibling_2.jpg" class="d-block w-100" alt="banner_rovaniemi_sibling_2">
+                        <div class="carousel-caption d-md-block">
+                           <h5>馴鹿與哈士奇雪橇體驗</h5>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                  </button>
+               </div>
+            </div>
+            <div class="row">
+               <p><span class="attrInfoInitText">羅凡尼米</span>位於赫爾辛基以北 800 公里，面積 101 平方公里，約十分一個香港大小，是芬蘭北部的一個重要旅遊城市。羅凡尼米
+                  是芬蘭北部拉普蘭省的省會，是芬蘭北部政治、經濟、文化和旅遊的中心，亦是世界上唯一位於北極圈內的都會。</p>
+               <p>羅凡尼米是通往芬蘭北方的大門，很多遊客以這裡作為他們極地旅遊的起點，進入北極圈欣賞極地風光和尋找如夢似幻的北極光。現時約有 35,000
+                  人居住的羅凡尼米，曾在二戰時遭受極大的破壞，幾乎從地圖上消失，幸好得芬蘭建築大師阿爾瓦．阿爾托(Alvar Aalto) 擔起重建任務，於是此地甚多建築物都可看到他的建築風格。</p>
+               <p>羅凡尼米是芬蘭北部的熱門旅遊景點，更是著名的聖誕老人家鄉。拜訪聖誕老人是遊客來到羅凡尼米的必做之事，遊客更可借此寶貴機會跟聖誕老人會面，是不少人夢寐以求的事。另外，到橫跨在北緯 66 度 33
+                  分的北極線拍照留念，亦是不少遊客來到羅凡尼米必做之事。記錄下自己踏入北極圈的一刻，將來跟親朋好友分享這一大壯舉，畢竟是十分難得的寶貴機會。遊客更可領取證明踏入北極圈的證書，讓這美好難忘的回憶可以得到永久的保存。</p>
+            </div>
+         </div>
+
+         <!-- Attractions -->
+         <div class="attrInfoInner cateFilterAttr mb-4 py-3 hide">
+            <div class="row mb-4">
+               <div class="col-md-6 pb-4">
+                  <h4 class="attrInfoTitle mb-4">聖誕老人村</h4>
+                  <p>芬蘭被譽為聖誕老人的故鄉，而為了強化芬蘭作為聖誕老人故鄉的形象芬蘭旅遊局和拉畢省政府共同制定出「聖誕老人故鄉計畫」，在羅凡尼米建立起獨具特色的旅遊景點，聖誕老人村。</p>
+                  <p>地址: Santa Claus Village, Tähtikuja 1, 96930 Napapiiri (Arctic Circle), Finland</p>
+               </div>
+               <div class="col-md-6 pb-4">
+                  <div class="yt-container">
+                     <iframe class="yt-embed" src="https://www.youtube.com/embed/Aebt_OVEsl0?si=x-CYaWXkJGQ8dOzA" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+               </div>
+            </div>
+            <div class="row mb-4">
+               <div class="col-md-6 order-12 order-md-1 pb-4">
+                  <div class="yt-container">
+                     <iframe class="yt-embed" src="https://www.youtube.com/embed/PXnNPTBWXeQ?si=NOLvmomLGd5CJFJi" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+               </div>
+               <div class="col-md-6 order-md-2 pb-4">
+                  <h4 class="attrInfoTitle mb-4">羅凡尼米北極光</h4>
+                  <p>極光最常出現在南北緯度約67度的環帶狀區域內，芬蘭有1/3的土地都在北極圈內。</p>
+                  <p>Northern Lights Village 是玻璃屋頂酒店。酒店房型是玻璃頂木屋，既保留了住客隱私，亦可以躺在床上欣賞天上星星。</p>
+                  <p>地址: Rovaniementie 3222E, 99830 Saariselkä, Lapland, Finland</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6 pb-4">
+                  <h4 class="attrInfoTitle mb-4">北極圈科學博物館 Arktikum</h4>
+                  <p>北極圈科學博物館位於芬蘭北邊 – 羅凡尼米區，展覽會介紹拉普蘭的歷史文化和北極環境等，亦有餐飲部、圖書館，近年成為一觀光景點。</p>
+                  <p>地址: Pohjoisranta 4, 96200 Rovaniemi, Finland</p>
+               </div>
+               <div class="col-md-6 pb-4">
+                  <div class="yt-container">
+                     <iframe class="yt-embed" src="https://www.youtube.com/embed/RJWzTykY8x8?si=SOF1xYlP99u7L5Uo" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Information -->
+         <div class="attrInfoInner cateFilterInfo mb-4 py-3 hide">
+            <div class="row mb-4">
+               <div class="col-md-6 pb-4">
+                  <h4 class="attrInfoTitle mb-4">氣候</h4>
+                  <div class="mb-2">時差</div>
+                  <div class="mb-2">香港較芬蘭快六小時。</div>
+                  <div class="mb-2">而每年 3 月最後一個星期日至 10 月最後一個星期日，芬蘭會實施日光節約時間 (DST)，那段時間香港快芬蘭五小時。</div>
+
+                  <div class="mt-4 mb-2">天氣</div>
+                  <div class="mb-2">羅凡尼米於芬蘭北方，氣候較南方寒冷。夏季平均溫度為攝氏 7 至 15 度，冬季寒冷，氣溫普遍為攝氏 -15 至 -9 度，最低氣溫更可達 -20 度以下。</div>
+                  <div class="mb-2">冬天的羅凡尼米夜長日短，日光時間往往只維持數小時。夏天則日長夜短，日光時間可達二十小時。</div>
+               </div>
+               <div class="col-md-6 pb-4">
+                  <h4 class="attrInfoTitle mb-4">有用連結</h4>
+                  <div>
+                     <a href="https://www.visitrovaniemi.fi/" target="_blank">Rovaniemi - The Official Hometown of Santa Claus</a>
+                     <a href="https://www.arcticcentre.org/EN/Arktikum" target="_blank">Arktikum Science Centre</a>
+                     <a href="https://santaclausvillage.info/" target="_blank">聖誕老人村</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+   </div>
+
+   <!-- Footer -->
+   <app-footer></app-footer>
+
+   <!-- JavaScript -->
+   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+   <script src="./js/script.js"></script>
+   <script src="./js/attractions.js"></script>
+</body>
+
+</html>

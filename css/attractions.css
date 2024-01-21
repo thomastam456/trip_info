@@ -1,0 +1,132 @@
+/* Banner Area */
+.attrBannerArea {
+   height: 300px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #FFF;
+   text-shadow: 2px 2px 3px #595959;
+}
+
+.attrBannerArea h2 {
+   z-index: 1;
+}
+
+
+/* Categories Filter */
+.cateFilterArea {
+   display: flex;
+   justify-content: center;
+}
+
+.cateFilterArea button {
+   margin: 0 0.625rem;
+   font-size: 1.2rem;
+   display: inline-flex;
+   align-items: center;
+}
+
+.cateFilterArea button .material-icons {
+   margin-right: .3rem;
+}
+
+
+/* Carousel */
+.carousel-inner {
+   box-shadow: 1px 2px 5px #acacac;
+}
+
+.carousel-caption h5 {
+   font-weight: bold;
+   text-shadow: 2px 2px 3px #595959;
+}
+
+
+/* YouTube Embed */
+.yt-container {
+   position: relative;
+   padding-top: 56.25%;
+   box-shadow: 1px 2px 5px #acacac;
+}
+
+.yt-embed {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+
+/* Attractions Info */
+.attrInfoArea {
+   display: flex;
+   flex-direction: column;
+}
+
+.attrInfoInner {
+   width: 80%;
+   margin: 0 auto;
+   transition: .3s all ease;
+}
+
+.attrInfoInner.hide {
+   transform: scale(0);
+   height: 0;
+   margin: 0 !important;
+   padding: 0 !important;
+   visibility: hidden;
+}
+
+.attrInfoInner p:last-child {
+   margin-bottom: 0;
+}
+
+.attrInfoInitText {
+   font-size: 1.2rem;
+   font-weight: bold;
+   margin-right: .5rem;
+}
+
+.attrInfoTitle {
+   font-weight: bold;
+}
+
+.attrInfoInner a {
+   display: block;
+   margin-bottom: 0.5rem;
+}
+
+.attrInfoSplitRows div {
+   display: inline-block;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 461px) {
+   .cateFilterArea {
+      flex-wrap: wrap;
+      width: 80%;
+      margin: 0 auto;
+      box-shadow: 1px 1px 3px #d8cece;
+   }
+
+   .cateFilterArea button {
+      width: 100%;
+      margin: 0;
+      border-radius: 0;
+      box-shadow: none;
+      justify-content: center;
+   }
+}
+
+@media only screen and (max-width: 426px) {
+   .carousel-caption {
+      display: none;
+   }
+
+   .attrInfoSplitRows div {
+      display: block;
+   }
+}
