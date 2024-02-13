@@ -1,8 +1,6 @@
-Website URL:
-https://thomastam456.github.io/trip_info/index.html
-
-<br>
-This is a static website providing information about four famous trip locations.
+This is a static website providing information about four famous trip locations.<br>
+URL: https://thomastam456.github.io/trip_info/index.html
+<br><br>
 
 Created By
 - HTML
